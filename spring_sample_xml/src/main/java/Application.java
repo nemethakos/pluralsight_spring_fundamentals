@@ -1,12 +1,18 @@
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import com.pluralsight.service.CustomerService;
-import com.pluralsight.service.CustomerServiceImpl;
 
 public class Application {
 
 	public static void main(String[] args) {
-		CustomerService customerService = new CustomerServiceImpl();
 
-		System.out.format("Customers: %s %n", customerService.findAll().toString());
+		try (ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext("applicationContext.xml");) {
+			
+			CustomerService customerService = appContext.getBean("customerService", CustomerService.class);
+
+			System.out.format("Customers: %s %n", customerService.findAll().toString());
+
+		}
 	}
 
 }
