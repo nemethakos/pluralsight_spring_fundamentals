@@ -1,0 +1,11 @@
+target
+/spring_sample_xml/.settings
+/spring_sample_xml/*.project
+/spring_sample_xml/*.classpath
+/spring_sample/.settings
+/spring_sample/target
+/spring_sample/.classpath
+/spring_sample/.project
+/spring_sample/*.project
+/spring_sample/*.classpath
+/.metadata
