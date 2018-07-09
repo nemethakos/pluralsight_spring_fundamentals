@@ -10,7 +10,7 @@
 <!-- Autowire by Type -->
 	<bean name="customerService"
 		class="com.pluralsight.service.CustomerServiceImpl"
-		  autowire="byType"  
+		  autowire="byType" scope="prototype"  
 		></bean>
 
 <!--  Autowire by Name 
