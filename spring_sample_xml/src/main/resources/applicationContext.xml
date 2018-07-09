@@ -6,11 +6,42 @@
 	<bean name="customerRepository"
 		class="com.pluralsight.repository.HibernateCustomerRepositoryImpl" />
 
+
+<!-- Autowire by Type -->
+	<bean name="customerService"
+		class="com.pluralsight.service.CustomerServiceImpl"
+		  autowire="byType"  
+		></bean>
+
+<!--  Autowire by Name 
+	<bean name="customerService"
+		class="com.pluralsight.service.CustomerServiceImpl"
+		  autowire="byName"  
+		></bean>
+-->
+
+	<!-- Autowire by constructor example 
+	<bean name="customerService"
+		class="com.pluralsight.service.CustomerServiceImpl"
+		  autowire="constructor"  
+		></bean>
+-->
+
+
+	<!--  Setter Injection  
 	<bean name="customerService"
 		class="com.pluralsight.service.CustomerServiceImpl">
+				<property name="customerRepository" ref="customerRepository"></property>
+		
+		</bean>
+-->
 
-		<property name="customerRepository" ref="customerRepository"></property>
-
-	</bean>
-
+	<!-- Constructor Injection Example 
+	<bean name="customerService"
+		class="com.pluralsight.service.CustomerServiceImpl">
+				<constructor-arg index="0" ref="customerRepository"></constructor-arg> 
+		
+		</bean>
+-->
+		
 </beans>
