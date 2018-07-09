@@ -16,6 +16,13 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 
 	
+	@Override
+	public String toString() {
+		return "CustomerServiceImpl [customerRepository=" + customerRepository + ", findAll()=" + findAll()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+	}
+
+
 	public CustomerServiceImpl() {
 		super();
 	}
