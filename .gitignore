@@ -9,3 +9,4 @@ target
 /spring_sample/*.project
 /spring_sample/*.classpath
 /.metadata
+/spring_sample_xml_anno/.settings
