@@ -14,9 +14,20 @@ import com.pluralsight.model.Customer;
 @Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
+	/**
+	 * Constructor injection example
+	 * @param dbUser
+	 */
+	public HibernateCustomerRepositoryImpl(@Value("${db.username}") String dbUser) {
+		super();
+		this.dbUser = dbUser;
+	}
+
+	/** member injection example
 	@Value("${db.username}")
+	*/
 	private String dbUser;
-	
+
 	@Override
 	public String toString() {
 		return "HibernateCustomerRepositoryImpl [findAll()=" + findAll() + "]";
@@ -24,9 +35,9 @@ public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
 	@Override
 	public List<Customer> findAll() {
-		
-		System.out.println("db user="+dbUser);
-		
+
+		System.out.println("db user=" + dbUser);
+
 		List<Customer> customers = new ArrayList<>();
 
 		customers.add(new Customer("Ákos", "Németh"));
