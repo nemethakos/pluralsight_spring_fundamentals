@@ -38,7 +38,7 @@ public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
 		System.out.println("db user=" + dbUser);
 
-		List<Customer> customers = new ArrayList<>();
+		var customers = new ArrayList<Customer>();
 
 		customers.add(new Customer("Ákos", "Németh"));
 		customers.add(new Customer("John", "Doe"));

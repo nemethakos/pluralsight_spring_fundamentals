@@ -17,9 +17,9 @@ public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
 	@Override
 	public List<Customer> findAll() {
-		List<Customer> customers = new ArrayList<>();
+		var customers = new ArrayList<Customer>();
 
-		Customer customer = new Customer();
+		var customer = new Customer();
 
 		customer.setFirstname("Ákos");
 		customer.setLastname("Németh");

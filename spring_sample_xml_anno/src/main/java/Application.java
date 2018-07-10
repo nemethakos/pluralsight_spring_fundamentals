@@ -6,10 +6,9 @@ public class Application {
 
 	public static void main(String[] args) {
 
-		try (ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
-				"applicationContext.xml");) {
+		try (var appContext = new ClassPathXmlApplicationContext("applicationContext.xml");) {
 
-			CustomerService customerService = appContext.getBean("customerService", CustomerService.class);
+			var customerService = appContext.getBean("customerService", CustomerService.class);
 
 			System.out.format("Customers: %s %n", customerService.findAll().toString());
 

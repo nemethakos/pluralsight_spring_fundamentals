@@ -7,14 +7,11 @@ import com.pluralsight.model.Customer;
 
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
-	/* (non-Javadoc)
-	 * @see com.pluralsight.repository.CustomerRepository#findAll()
-	 */
 	@Override
 	public List<Customer> findAll() {
-		List<Customer> customers = new ArrayList<>();
+		var customers = new ArrayList<Customer>();
 		
-		Customer customer = new Customer();
+		var customer = new Customer();
 		
 		customer.setFirstname("Ákos");
 		customer.setLastname("Németh");
