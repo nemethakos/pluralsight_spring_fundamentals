@@ -13,3 +13,8 @@ target
 /spring_sample_java/.settings
 /spring_sample_java/*.classpath
 /spring_sample_java/*.project
+/.recommenders/
+/FitnessTracker/*.springBeans
+/FitnessTracker/*.classpath
+/FitnessTracker/*.project
+/FitnessTracker/.settings

@@ -16,7 +16,6 @@ public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
 	/**
 	 * Constructor injection example
-	 * @param dbUser
 	 */
 	public HibernateCustomerRepositoryImpl(@Value("${db.username}") String dbUser) {
 		super();

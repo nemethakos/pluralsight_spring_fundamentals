@@ -10,9 +10,6 @@ public class CustomerServiceImpl implements CustomerService {
 
 	private CustomerRepository customerRepository = new HibernateCustomerRepositoryImpl();
 	
-	/**
-	 * @see com.pluralsight.service.CustomerService#findAll()
-	 */
 	@Override
 	public List<Customer> findAll() {
 		return customerRepository.findAll();
