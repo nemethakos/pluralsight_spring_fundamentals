@@ -16,6 +16,10 @@
  	<url-pattern>*.html</url-pattern>
  </servlet-mapping>
  
+  <servlet-mapping>
+ 	<servlet-name>fitTrackerServlet</servlet-name>
+ 	<url-pattern>*.json</url-pattern>
+ </servlet-mapping>
  
  <!--	Serving static URLs in this case pdfs under the webapp/pdfs
  		see mvc:resources tag in servlet-config.xml
