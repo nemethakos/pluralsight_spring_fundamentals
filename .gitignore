@@ -18,3 +18,8 @@ target
 /FitnessTracker/*.classpath
 /FitnessTracker/*.project
 /FitnessTracker/.settings
+/EventTracker/.mvn/wrapper/*.jar
+/EventTracker/.springBeans
+/EventTracker/.project
+/EventTracker/.classpath
+/EventTracker/.mvn
