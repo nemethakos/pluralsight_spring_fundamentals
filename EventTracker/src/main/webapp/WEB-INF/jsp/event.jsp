@@ -6,6 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Event Page</title>
+<link rel="stylesheet" href="css/style.css">
 <style>
 .error {
 	color: #f00;

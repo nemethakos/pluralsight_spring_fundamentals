@@ -10,6 +10,8 @@
 	<h1>Hello!</h1>
 	<ul>
 		<li><a href="greeting.html">greeting.html</a>
+		<li><a href="event.html">event.html</a>
+		<li><a href="pdfs/sample.pdf">pdfs/sample.pdf</a>
 	</ul>
 </body>
 </html>
